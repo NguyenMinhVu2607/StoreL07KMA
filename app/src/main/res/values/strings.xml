@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Book Store</string>
+    <string name="title_activity_ui">UI</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Book Store</string>
+    <string name="nav_header_subtitle">example@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_category">Category</string>
+    <string name="menu_offer">Offer</string>
+    <string name="menu_newproduct">New Product</string>
+    <string name="menu_my_order">My Order</string>
+    <string name="menu_my_card">My Cart</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="dm_send_email">mail</string>
+</resources>

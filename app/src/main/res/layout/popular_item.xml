@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/custom_item_popular"
+    android:backgroundTint="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/custom_item_popular"
+        android:padding="8dp"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/pop_image"
+            android:layout_width="280dp"
+            android:layout_height="170dp"
+            app:riv_corner_radius="14dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sale"
+            />
+        <TextView
+            android:id="@+id/pop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+
+            android:text="Popular Products"
+            android:textSize="16dp"
+            android:fontFamily="@font/productsans_bold"
+            />
+        <TextView
+            android:id="@+id/pop_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="#606060"
+            android:textSize="14dp"
+            android:fontFamily="@font/boubaround"
+            android:text="Description"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/star_1" />
+            <TextView
+                android:id="@+id/pop_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="5dp"
+                android:text="5.0"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/pop_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="end"
+                android:text="Discounnt 20%"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

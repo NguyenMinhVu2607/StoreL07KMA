@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    android:padding="3dp"
+    android:background="@drawable/custom_item_popular"
+    android:backgroundTint="@color/white"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cat_nav_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:fontFamily="@font/boubaround_bold"
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nav_cat_name"
+                android:textStyle="bold"
+                android:text="Name"
+                android:textSize="22sp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Price : "
+                    android:fontFamily="@font/boubaround_bold"
+
+                    android:textSize="18sp"
+                    android:textColor="#606060"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/price"
+                    android:textStyle="bold"
+                    android:text="Product Price"
+                    android:fontFamily="@font/boubaround_bold"
+
+                    android:textSize="18sp"
+                    android:textColor="#606060"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/remove_item"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:src="@drawable/group_23" />
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="1"
+                    android:fontFamily="@font/kumbhsans_bold"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:id="@+id/add_item"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/group_15" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buynow"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:text="Buy Now"
+                android:textColor="@color/black"
+                android:background="@drawable/custom_button_buynow"
+                android:fontFamily="@font/boubaround_bold"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
